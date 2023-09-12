@@ -1,0 +1,283 @@
+{
+  "metadata": {
+    "title": "Wondeland Agent Back Office",
+    "description": "For Wonderland Agents"
+  },
+  "login": {
+    "title": "Sign In",
+    "description": "Please enter your account ID and password to login.",
+    "agentId": {
+      "label": "Account ID",
+      "placeholder": "Account ID",
+      "description": "Account ID"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Password",
+      "description": "Password"
+    },
+    "button": "Sign In",
+    "error": {
+      "authFailed": "Account ID or Password is incorrect",
+      "accountLocked": "Account is locked",
+      "unknownError": "Unknown error"
+    }
+  },
+  "language": {
+    "hint": "If you need to change language",
+    "title": "Language",
+    "input": {
+      "label": "Language",
+      "placeholder": "Language",
+      "description": "Language"
+    }
+  },
+  "sidebar": {
+    "user": "User",
+    "accountList": "Account List",
+    "accountManagement": "Account Management",
+    "accountProfileManagement": "Account Profile Management",
+    "changePassword": "Change Password",
+    "profile": "Profile",
+    "logout": "Logout",
+    "promotionManagement": "Promotion Management",
+    "promotionApplication": "Promotion Application",
+    "createStreamerEvent": "Create Streamer Event",
+    "manualPointGiveaway": "Manual Point Giveaway"
+  },
+  "ui": {
+    "search": "Search",
+    "logout": "Log Out",
+    "next": "Next",
+    "back": "Back",
+    "finish": "Finish"
+  },
+  "accountManagement": {
+    "title": "Account Management",
+    "description": "Account Management"
+  },
+  "changePassword": {
+    "title": "Change Password",
+    "description": "Please change your password after login for the first time.",
+    "oldPassword": {
+      "label": "Old Password",
+      "placeholder": "Old Password",
+      "description": ""
+    },
+    "newPassword": {
+      "label": "New Password",
+      "placeholder": "New Password",
+      "description": ""
+    },
+    "button": "Commit"
+  },
+  "inputErrorMessage": {
+    "textLength": "Text must be less than {0}",
+    "fileSizeLessThanKB": "File size must be less than {0}kB",
+    "imageWidthEqualPx": "Image width must equal to {0}px",
+    "imageHeightEqualPx": "Image height must equal to {0}px"
+  },
+  "errorMessage": {
+    "noData": "No data"
+  },
+  "createGameEvent": {
+    "title": "Create Promotion",
+    "description": "",
+    "finishedMessage": "Event create successfully! Wait for approval.",
+    "errorMessage": {
+      "endTimeGreaterThanStartTime": "End time must be greater than start time",
+      "eventTimeDuration3Hours": "Event time must be in 3 hours duration"
+    },
+    "countries": {
+      "label": "Select Countries",
+      "placeholder": "Countries",
+      "description": ""
+    },
+    "eventName": {
+      "label": "Event Name",
+      "placeholder": "Event Name",
+      "description": "Limit: 50 characters"
+    },
+    "eventTime": {
+      "label": "Event Time (GMT+8)",
+      "placeholder": "",
+      "description": "Event Time Limit: 3 hours"
+    },
+    "gameCode": {
+      "label": "Game Code",
+      "placeholder": "Game Code",
+      "description": ""
+    },
+    "streamerName": {
+      "label": "Streamer Name",
+      "placeholder": "Streamer Name",
+      "description": "Limit: 20 characters"
+    },
+    "eventContext": {
+      "label": "Event Context",
+      "placeholder": "",
+      "description": "Limit: 500 characters"
+    },
+    "bonusAreaContext": {
+      "label": "Bonus Area Context",
+      "placeholder": "",
+      "description": "Limit: 500 characters"
+    },
+    "bonusBreakdownContext": {
+      "label": "Bonus Breakdown Context",
+      "placeholder": "",
+      "description": "Limit: 500 characters"
+    },
+    "defaultAgentLogoUrl": {
+      "label": "Default Agent Logo Url",
+      "placeholder": "Default Agent Logo Url",
+      "description": ""
+    },
+    "defaultStreamerImageUrl": {
+      "label": "Default Streamer Image Url",
+      "placeholder": "Default Streamer Image Url",
+      "description": ""
+    },
+    "eventVisualImg": {
+      "label": "Event Visual Image",
+      "placeholder": "Event Visual Image",
+      "description": "Width*Height: 800px*400px\r\nImage Format : PNG, JPG\r\nFile Size : Under 150 kB"
+    },
+    "agentLogoImg": {
+      "label": "Agent Logo Image",
+      "placeholder": "Agent Logo Image",
+      "description": "Width*Height: 80px*80px\r\nImage Format : PNG, JPG, SVG\r\nFile Size : Under 30 kB"
+    },
+    "streamerImg": {
+      "label": "Streamer Image",
+      "placeholder": "Streamer Image",
+      "description": "Width*Height: 288px*308px\r\nImage Format : PNG, JPG, SVG\r\nFile Size : Under 80 kB"
+    },
+    "button": "Commit"
+  },
+  "promotionApplication": {
+    "streamer": {
+      "title": "Streamer Game Event",
+      "eventRange": {
+        "label": "Event Start Date",
+        "placeholder": "Date start of events",
+        "description": "Range of event start date"
+      },
+      "gameCode": {
+        "label": "Game Code",
+        "placeholder": "Game Code",
+        "description": ""
+      },
+      "status": {
+        "label": "Event Status",
+        "placeholder": "Event Status",
+        "description": ""
+      },
+      "search": "Search",
+      "create": "Create Event",
+      "eventHeader": {
+        "eventId": "Event ID",
+        "eventName": "Event Name",
+        "eventTime": "Event Time",
+        "gameCode": "Game Code",
+        "gameName": "Game Name",
+        "budgetPoint": "Budget Point",
+        "rewardPoint": "Reward Point",
+        "collectionAmount": "Collection Amount",
+        "participationAmount": "Participation Amount",
+        "status": "Status",
+        "remark": "Remark",
+        "action": "Action"
+      },
+      "eventData": {
+        "view": "View",
+        "duplicate": "Duplicate",
+        "downloadWinnerList": "Download WinnerList"
+      }
+    },
+    "traffic": {
+      "title": "Traffic Driven Event"
+    }
+  },
+  "manualPointGiveaway": {
+    "manualBatch": {
+      "title": "Manual Batch",
+      "eventRange": {
+        "label": "Time",
+        "placeholder": "Date start of events",
+        "description": "Range of event start date"
+      },
+      "status": {
+        "label": "Status",
+        "placeholder": "Status",
+        "description": ""
+      },
+      "search": "Search",
+      "create": "Create",
+      "rewardHeader": {
+        "rewardId": "Reward ID",
+        "rewardName": "Event Name",
+        "createdOn": "Time",
+        "applicant": "Applicant",
+        "gameName": "Game Name",
+        "totalRewardPoint": "Reward Point",
+        "detail": "Detail",
+        "status": "Status"
+      },
+      "eventData": {
+        "view": "View"
+      }
+    },
+    "collectionReview": {
+      "title": "Collection Review"
+    }
+  },
+  "createDistribution": {
+    "title": "Create Distribution",
+    "description": "",
+    "errorMessage": {
+      "eventRequired": "Trigger Event or Reward Name is required."
+    },
+    "triggerEventId": {
+      "label": "Event Name",
+      "placeholder": "",
+      "description": ""
+    },
+    "eventName": {
+      "label": "Reward Name",
+      "placeholder": "",
+      "description": "Limit: 50 characters"
+    },
+    "details": {
+      "label": "Upload",
+      "placeholder": "Upload File",
+      "description": ""
+    },
+    "downloadExample": "Download Example",
+    "submit": "Submit",
+    "cancel": "Cancel"
+  },
+  "viewDistribution": {
+    "title": "View Distribution",
+    "description": "",
+    "triggerEventId": {
+      "label": "Event Name",
+      "placeholder": "",
+      "description": ""
+    },
+    "rewardName": "Reward Name",
+    "createOn": "Create On",
+    "eventHeader": {
+      "playerId": "Player ID",
+      "displayName": "Display Name",
+      "rewardAmount": "Reward Amount",
+      "rewardStatus": "Reward Status",
+      "reason": "Reason"
+    },
+    "eventData": {
+      "pending": "Pending",
+      "success": "Success",
+      "fail": "Fail"
+    }
+  }
+}

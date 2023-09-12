@@ -1,0 +1,8 @@
+import { ChangePasswordForm } from '@/components/form/ChangePasswordForm';
+import { KEY_MAP } from '@/config';
+import { cookies } from 'next/headers';
+
+export default async function Page({ params }: { params: { lang: string } }) {
+	const isNotClosable = cookies().get(KEY_MAP.isFirstLogin)?.value === 'true';
+	return <ChangePasswordForm unableClose={isNotClosable} />;
+}

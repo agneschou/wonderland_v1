@@ -1,0 +1,43 @@
+include:
+  - project: 'utopia/utopia-cicd-template'
+    ref: main
+    file: '.gitlab-ci-frontend-template.yml'
+
+variables:
+  GCR_IMAGE: asia.gcr.io/utopia-op-5b23d76d/utopia/utopia-agent-f2e
+
+stages:
+  - build_uat
+  - deploy_uat
+  - build_prod
+  - deploy_prod
+
+build_uat:
+  extends: .build-template
+  stage: build_uat
+  variables:
+    STAGE: uat
+
+deploy_uat:
+  extends: .uat
+  stage: deploy_uat
+  variables:
+    DEPLOY_FILE: kubernetes.uat.deployment.yml
+    DEPLOY_FOLDER: ./Kubernetes-Manifest
+    STAGE: uat
+
+build_prod:
+  extends: .build-template
+  when: manual
+  stage: build_prod
+  variables:
+    STAGE: prod
+
+deploy_prod:
+  extends: .prod
+  when: manual
+  stage: deploy_prod
+  variables:
+    DEPLOY_FILE: kubernetes.prod.deployment.yml
+    DEPLOY_FOLDER: ./Kubernetes-Manifest
+    STAGE: prod
